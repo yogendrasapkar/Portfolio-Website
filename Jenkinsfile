@@ -43,5 +43,13 @@ pipeline {
                 echo "Workspace cleaned"
             }
     }
+   success {
+        mail(from: "shashank.1721ec1128@gmail.com",
+                to: "kumar.shashank@innovaccer.com",
+                subject: "That build passed.",
+                body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL}")
+    }
+
+    
    
 }
