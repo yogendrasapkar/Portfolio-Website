@@ -17,8 +17,6 @@ pipeline {
    //     sh 'cd git-cicd'
    //     sh 'cd git-cicd'
      //   sh 'ls'
-        
-    
 
       }
         }
