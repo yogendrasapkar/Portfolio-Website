@@ -4,10 +4,7 @@ pipeline {
     environment {
         CI = 'true'
     }
-    stages {
-     
- 
-       
+    stages {      
         stage('Build') {
             steps {
            // sh  'git clone https://github.com/shashank-kumar-rajput/git-cicd.git'
