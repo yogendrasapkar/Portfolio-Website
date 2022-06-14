@@ -26,13 +26,13 @@ pipeline {
             }
         }
        stage('post-deployment'){
-          steps{
+         
             
     String HTTP_URL= "https://shashank-kumar-portfolio.netlify.app/"
     description = "<a href='${HTTP_URL}'</a>" + "google"
     manager.addShortText(description, "black", "white", "1.5px", "white");
 
-          }
+          
        }
         
     }
