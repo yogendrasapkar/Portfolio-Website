@@ -43,8 +43,7 @@ pipeline {
                 mail(from: "shashank.1721ec1128@kiet.edu",
                 to: "kumar.shashank@innovaccer.com",
                 subject: "Job build failed ",
-                body: "Hi, Kindly check the error for the following details : 
-                       Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
+                body: "Hi, Kindly check the error for the following details : Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
             always {
         // Let's wipe out the workspace before we finish!
