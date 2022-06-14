@@ -10,6 +10,7 @@ pipeline {
            // sh  'git clone https://github.com/shashank-kumar-rajput/git-cicd.git'
              // sh 'cd git-cicd'
                echo 'New Build'
+                echo "Running ${env.BUILD_ID} on ${env.JENKINS_URL}"
             }
         }
         stage ('Install'){
@@ -25,15 +26,7 @@ pipeline {
                  echo 'New Commit'
             }
         }
-       stage('post-deployment'){
-         
-            
-    String HTTP_URL= "https://shashank-kumar-portfolio.netlify.app/"
-    description = "<a href='${HTTP_URL}'</a>" + "google"
-    manager.addShortText(description, "black", "white", "1.5px", "white");
-
-          
-       }
+       
         
     }
 }
