@@ -7,17 +7,13 @@ pipeline {
     stages {      
         stage('Build') {
             steps {
-           // sh  'git clone https://github.com/shashank-kumar-rajput/git-cicd.git'
-             // sh 'cd git-cicd'
                echo 'New Build'
                echo "Running Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}"
             }
         }
         stage ('Install'){
              steps {
-  
         echo 'New update'
-
       }
         }
         stage('Test') {
@@ -26,9 +22,6 @@ pipeline {
                  echo 'New Commit'
             }
         }
-       
-       
-        
     }
        post {
             success {
@@ -46,13 +39,8 @@ pipeline {
                 body: "Hi, Kindly check the error for the following details : Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
             always {
-        // Let's wipe out the workspace before we finish!
                 deleteDir()
                 echo "Workspace cleaned"
             }
-    }
-  
-
-    
-   
+    } 
 }
