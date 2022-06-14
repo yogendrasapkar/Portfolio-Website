@@ -33,6 +33,10 @@ pipeline {
        post {
             success {
                 echo "Test run completed succesfully."
+                mail(from: "shashank.1721ec1128@kiet.edu",
+                to: "kumar.shashank@innovaccer.com",
+                subject: "That build passed.",
+                body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL}")
             }
             failure {
                 echo "Test run failed."
@@ -43,12 +47,7 @@ pipeline {
                 echo "Workspace cleaned"
             }
     }
-   success {
-        mail(from: "shashank.1721ec1128@kiet.edu",
-                to: "kumar.shashank@innovaccer.com",
-                subject: "That build passed.",
-                body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL}")
-    }
+  
 
     
    
