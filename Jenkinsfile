@@ -8,15 +8,14 @@ pipeline {
         stage('Build') {
             steps {
            // sh  'git clone https://github.com/shashank-kumar-rajput/git-cicd.git'
-              sh 'cd git-cicd'
+             // sh 'cd git-cicd'
+               echo 'New Build'
             }
         }
         stage ('Install'){
              steps {
   
-        sh 'cd git-cicd'
-   //sh 'cd git-cicd'
-      sh 'ls'
+        echo 'New update'
 
       }
         }
