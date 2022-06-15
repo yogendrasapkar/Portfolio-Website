@@ -17,7 +17,7 @@ pipeline {
       }
         }
         stage('Test') {
-           step{
+           steps{
               
                  //sh 'npm test'
                 echo 'New Commit'
