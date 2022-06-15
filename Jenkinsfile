@@ -21,12 +21,9 @@ pipeline {
               
                  //sh 'npm test'
                 echo 'New Commit'
-              currentBuild.rawBuild.getChangeSets().each { cs ->
-  cs.getItems().each { item ->
-    item.getAffectedFiles().each { f ->
-       echo '${f}'
-    }
+            
   }
+    }
     }
        post {
             success {
