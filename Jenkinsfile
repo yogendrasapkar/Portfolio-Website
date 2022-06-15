@@ -28,15 +28,15 @@ pipeline {
        post {
             success {
                 echo "Test run completed succesfully."
-               echo "Sending Email to : shubhanshu.keshari@innovaccer.com"
-                mail(from: "shubhanshukeshari257@gmail.com",
+               echo "Sending Email to : yogendra.sapkar@innovaccer.com"
+                mail(from: "yogendra.sapkar@innovaccer.com",
                 to: "shubhanshu.keshari@innovaccer.com, yogendra.sapkar@innovaccer.com",
                 subject: "Job build ${env.BUILD_ID} passed  ",
                 body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
             failure {
                 echo "Test run failed."
-               echo "Sending Email to : shubhanshukeshari257@gmail.com"
+               echo "Sending Email to : yogendra.sapkar@innovaccer.com"
                 mail(from: "yogendra.sapkar@innovaccer.com",
                 to: "shubhanshu.keshari@innovaccer.com",
                 subject: "Job build ${env.BUILD_ID} failed ",
