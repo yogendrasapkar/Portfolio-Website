@@ -16,11 +16,13 @@ pipeline {
         echo 'New update'
       }
         }
-        stage('Test') {
+        stage('Commit change') {
            steps{
               
                  //sh 'npm test'
                 echo 'New Commit'
+               sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
+              
              
            }
         }
