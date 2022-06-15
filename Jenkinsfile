@@ -28,17 +28,17 @@ pipeline {
        post {
             success {
                 echo "Test run completed succesfully."
-               echo "Sending Email to : kumar.shashank@innovaccer.com"
-                mail(from: "shashank.1721ec1128@kiet.edu",
-                to: "kumar.shashank@innovaccer.com, gayathri.rajendran@innovaccer.com",
+               echo "Sending Email to : shubhanshu.keshari@innovaccer.com"
+                mail(from: "shubhanshukeshari257@gmail.com",
+                to: "shubhanshu.keshari@innovaccer.com, yogendra.sapkar@innovaccer.com",
                 subject: "Job build ${env.BUILD_ID} passed  ",
                 body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
             failure {
                 echo "Test run failed."
-               echo "Sending Email to : kumar.shashank@kiet.edu"
-                mail(from: "shashank.1721ec1128@kiet.edu",
-                to: "kumar.shashank@innovaccer.com",
+               echo "Sending Email to : shubhanshukeshari257@gmail.com"
+                mail(from: "yogendra.sapkar@innovaccer.com",
+                to: "shubhanshu.keshari@innovaccer.com",
                 subject: "Job build ${env.BUILD_ID} failed ",
                 body: "Hi, Kindly check the error for the following details : Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
