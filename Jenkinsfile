@@ -21,7 +21,14 @@ pipeline {
               
                  //sh 'npm test'
                 echo 'New Commit'
-               sh(returnStdout: true, script: "git log -1 --pretty=%B").trim()
+              currentBuild.rawBuild.getChangeSets().each { cs ->
+  cs.getItems().each { item ->
+    item.getAffectedFiles().each { f ->
+       echo '${f}'
+    }
+  }
+}
+
               
              
            }
