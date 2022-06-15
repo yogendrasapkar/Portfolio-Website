@@ -17,9 +17,9 @@ pipeline {
       }
         }
         stage('Test') {
-            steps {
+            
                  //sh 'npm test'
-                 echo 'New Commit'
+              //   echo 'New Commit'
                 env.NODE_ENV = "test"
 
             print "Environment will be : ${env.NODE_ENV}"
@@ -28,7 +28,7 @@ pipeline {
          sh 'npm prune'
          sh 'npm install'
          sh 'npm test'
-            }
+            
         }
     }
        post {
