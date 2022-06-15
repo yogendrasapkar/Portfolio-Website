@@ -30,7 +30,7 @@ pipeline {
                 echo "Test run completed succesfully."
                echo "Sending Email to : kumar.shashank@kiet.edu"
                 mail(from: "shashank.1721ec1128@kiet.edu",
-                to: "kumar.shashank@innovaccer.com",
+                to: "kumar.shashank@innovaccer.com" ,"gayathri.rajendran@innovaccer.com",
                 subject: "Job build ${env.BUILD_ID} passed  ",
                 body: "Build : ${env.BUILD_ID} on ${env.JENKINS_URL} Job: ${env.BUILD_URL}")
             }
