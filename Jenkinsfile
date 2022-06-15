@@ -17,14 +17,11 @@ pipeline {
       }
         }
         stage('Test') {
-           steps{
+           step{
               
                  //sh 'npm test'
                 echo 'New Commit'
-              sh 'node -v'
-              sh 'npm prune'
-              sh 'npm install'
-              sh 'npm test'
+             
            }
         }
     }
