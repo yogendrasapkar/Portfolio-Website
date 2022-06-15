@@ -27,12 +27,6 @@ pipeline {
        echo '${f}'
     }
   }
-}
-
-              
-             
-           }
-        }
     }
        post {
             success {
