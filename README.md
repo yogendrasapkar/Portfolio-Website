@@ -8,7 +8,7 @@ Webpage contains basic details like my introduction, skills, technologies and co
 ## CSS was used to design the content properly
 Various fonts, background colors and other peroperties were used to design and decorate the page.
 
-## Js was used to make site intractive
+## Js was used to make site intractiveax
 
 Various color changing to webpage referencing tecnique was used.
 
