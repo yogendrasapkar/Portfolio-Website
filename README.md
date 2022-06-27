@@ -1,7 +1,7 @@
 # Portfolio-Website
 ## Contains Basic HTML, Js, CSS implementation for Portfolio Development
 ## HTML was used to structure the webpage.
-Various ID's and classes were created to diinguish every elements.ssssds
+Various ID's and classes were created to diinguish every elements
 
 Webpage contains basic details like my introduction, skills, technologies and contact information.
 
